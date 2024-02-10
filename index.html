@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+
+    <h1 id="titulo">Codificador</h1>
+
+    <!-- Conteúdo principal -->
+    <div class="conteiner">
+
+        <!-- Área de codificação/descodificação -->
+        <div class="codDecod">
+            <textarea id="mensagem" rows="5" cols="33" placeholder="Digite aqui..."></textarea>
+            <div id="botoes">
+                <button onclick="criptografarMensagem()">Criptografar</button>
+                <button onclick="descriptografarMensagem()">Descriptografar</button>
+            </div>
+        </div>
+
+        <!-- Área de exibição de mensagens -->
+        <div class="mensagens">
+            <p id="texto-resultante"></p>
+            <img id="imagem" src="assets/images/encryption2.svg" alt="Nenhuma mensagem encontrada">
+            <button id="btnCopiar" onclick="copiar()">Copiar mensagem</button>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>Desenvolvido por Rafael Pereira Gonçalves</footer>
+
+    <!-- Script JavaScript -->
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
